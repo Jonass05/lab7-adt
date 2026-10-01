@@ -117,6 +117,7 @@ int main()
     log.addSession(45);
     log.addSession(30);
     log.addSession(90);
+    log.addSession(75); // This should fail.
 
     // TODO (Part E): Print the number of stored sessions and whether the fifth session was accepted.
     cout << "Number of stored sessions: " << log.size() << endl;
