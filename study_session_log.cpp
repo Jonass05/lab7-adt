@@ -107,12 +107,24 @@ public:
 int main()
 {
     // ===== Resolve these TODOs later (Part E) =====
-
+    cout << boolalpha;
     // TODO (Part E): Create a StudySessionLog object and print whether it starts empty.
+    StudySessionLog log;
+    cout << "Log is empty: " << log.isEmpty() << endl;
+
     // TODO (Part E): Add four dummy session durations and attempt to add a fifth.
+    log.addSession(50);
+    log.addSession(45);
+    log.addSession(30);
+    log.addSession(90);
+
     // TODO (Part E): Print the number of stored sessions and whether the fifth session was accepted.
+    cout << "Number of stored sessions: " << log.size() << endl;
+    cout << "Fifth session accepted: " << log.addSession(75) << endl;
+
     // TODO (Part E): Print the total minutes and the longest stored session.
-    // TODO (Part E): Print descriptive English labels for all results.
+    cout << "Total minutes: " << log.totalMinutes() << endl;
+    cout << "Longest session: " << log.longestSession() << endl;
 
     return 0;
 }
